@@ -1,17 +1,16 @@
 body {
     font-family: sans-serif;
-    background-color: #7c1e0d; /* Your dark red/brown background for the entire page */
+    background-color: #7c1e0d; /* Your dark red/brown background */
     margin: 0; /* Remove default body margin */
-    display: flex; /* Use flexbox to position sidebar and main content */
-    min-height: 100vh; /* Ensure the body takes up the full screen height */
+    display: flex; /* Makes the children (nav and main) align horizontally */
+    min-height: 100vh; /* Ensures the page takes up full screen height */
 }
 
-/* Styles for the left navigation bar */
+/* Styles for the new vertical navigation bar */
 .sidebar {
-    width: 200px;
-    background-color: #333; /* Dark background for contrast */
+    width: 200px; /* Fixed width for the sidebar */
+    background-color: #333; /* Dark background for the sidebar content */
     padding-top: 20px;
-    color: white;
     box-shadow: 2px 0 5px rgba(0,0,0,0.5);
 }
 
@@ -22,23 +21,23 @@ body {
 }
 
 .sidebar li a {
-    color: white;
+    color: white; /* Make links readable */
     padding: 10px 15px;
-    text-decoration: none; /* Remove underlines from links */
-    display: block; /* Make the whole list item clickable */
+    text-decoration: none; /* Remove underlines */
+    display: block; /* Makes the entire area clickable */
     transition: background-color 0.3s;
 }
 
 .sidebar li a:hover {
-    background-color: #575757; /* Highlight on hover */
+    background-color: #575757; /* Highlight link on hover */
 }
 
-/* Styles for the main content area */
+/* Styles for the main content area (Harvest Moon text) */
 .main-content {
-    flex-grow: 1; /* Makes the main content take up the remaining space */
+    flex-grow: 1; /* This makes the content area expand to fill remaining space */
     padding: 20px;
     text-align: center;
-    color: white; /* Make text readable on the dark background */
+    color: white; /* Ensure text is visible on the background */
 }
 
 h1, p {
